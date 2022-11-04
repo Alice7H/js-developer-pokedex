@@ -1,0 +1,65 @@
+body,
+.container {
+  background: teal;
+}
+.mark {
+  font-weight: bold;
+}
+.content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 1rem;
+  height: auto;
+}
+.wrap img {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  width: 100%;
+  margin: auto;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+}
+.description h1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 280px) {
+  .wrap {
+    display: flex;
+    align-items: center;
+    width: 90vw;
+  }
+  .wrap img {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 380px) {
+  .wrap img {
+    width: 50%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 576px) {
+  .wrap img {
+    width: 35%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 758px) {
+  .content {
+    flex-direction: row;
+  }
+  .wrap {
+    width: auto;
+  }
+  .wrap img {
+    width: 250px;
+    margin: auto;
+  }
+}
